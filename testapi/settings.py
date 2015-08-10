@@ -79,8 +79,8 @@ DATABASES = {
         'NAME': 'affablebean',
         'USER': 'django',
         'PASSWORD': 'django',
-        'HOST':'/cloudsql/testapi-1032:testapi',
-        #'PORT':'3306'
+        'HOST':'localhost',
+        'PORT':'3306'
     }
 }
 
