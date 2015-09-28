@@ -25,7 +25,7 @@ SECRET_KEY = '&o^ztecso96hc-p(%t9htyd0&9x^lqz*e&pdu$dz0w4#xc@f$)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -109,4 +109,5 @@ STATIC_URL = '/static/'
 
 TASTYPIE_DEFAULT_FORMATS=['json']
 
-CORS_ORIGIN_ALLOW_ALL=True
+CORS_ORIGIN_ALLOW_ALL = True
+
