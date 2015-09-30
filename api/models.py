@@ -65,3 +65,23 @@ class Product(models.Model):
     class Meta:
         managed = False
         db_table = 'product'
+
+class BroadcastMsg(models.Model):
+    id = models.IntegerField(primary_key=True)
+    message = models.CharField(max_length=200L)
+    create_date = models.DateTimeField(null=True, blank=True)
+    update_date = models.DateTimeField(null=True, blank=True)
+    class Meta:
+        db_table = 'broadcast_msg'
+
+class User(models.Model):
+    id = models.IntegerField(primary_key=True)
+    first_name = models.CharField(max_length=45L)
+    last_name = models.CharField(max_length=45L)
+    middle_name = models.CharField(max_length=45L, blank=True)
+    email = models.CharField(max_length=45L)
+    github_id = models.CharField(max_length=45L, blank=True)
+    google_id = models.CharField(max_length=45L, blank=True)
+    facebook_id = models.CharField(max_length=45L, blank=True)
+    class Meta:
+        db_table = 'user'
