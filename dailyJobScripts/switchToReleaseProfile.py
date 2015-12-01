@@ -21,7 +21,11 @@ def updateProfile(file_path):
 	
 				
 def main():
-	updateProfile('web.xml');
-
+	try:
+		webConfigFilePath =  sys.argv[1]
+		updateProfile(webConfigFilePath);
+	except IndexError:
+		print 'Please provide a project name'
+		
 if __name__ == "__main__":
 	main()
