@@ -1,7 +1,7 @@
 #This script is created for switching between development and release profile during a jenkin build. It changes spring.profiles.default on web.xml file
 
 import xml.etree.ElementTree as ET
-
+import sys
 
 def updateProfile(file_path):
 	ET.register_namespace("","http://xmlns.jcp.org/xml/ns/javaee")
